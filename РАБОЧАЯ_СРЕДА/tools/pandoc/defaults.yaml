@@ -1,0 +1,15 @@
+# Pandoc defaults для PDF-сборки (Tectonic/XeTeX, кириллица).
+# Используется build_pdf.py через --defaults.
+pdf-engine: tectonic
+variables:
+  mainfont: "Times New Roman"
+  sansfont: "Arial"
+  monofont: "Consolas"
+  lang: ru
+  geometry: "margin=2.2cm"
+  fontsize: 11pt
+  colorlinks: true
+  linkcolor: "[RGB]{0,128,128}"   # teal — палитра проекта
+  urlcolor: "[RGB]{0,128,128}"
+toc: false
+number-sections: false

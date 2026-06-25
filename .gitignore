@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Regenerable build outputs (rebuild with РАБОЧАЯ_СРЕДА/tools)
+РАБОЧАЯ_СРЕДА/out/
+
+# OS / Office temp
+Thumbs.db
+.DS_Store
+~$*
