@@ -161,3 +161,21 @@ python tools\build_pptx.py slides\X.md       # → out\X.pptx
 
 > Что финансирует грант, eligibility, потолки бюджета, дедлайн (30.06.2026) —
 > в `../ПРАВИЛА_конкурса.md` и `source_extracted/NBS-IA_Call_for_Proposals_Central_Asia.md`.
+
+---
+
+## 5. Перенос на другой компьютер
+
+Репозиторий хранит **все файлы и наработки**, но не сами инструменты (Python-библиотеки,
+Pandoc, Tectonic ставятся на машину). На новом компьютере:
+
+```powershell
+git clone https://github.com/Alyasska/-4_contest.git
+# 1) Python 3.12+  →  pip install -r РАБОЧАЯ_СРЕДА/requirements.txt
+# 2) Pandoc        →  winget install JohnMacFarlane.Pandoc   (или с pandoc.org)
+# 3) Tectonic (PDF)→  бинарник с github.com/tectonic-typesetting/tectonic → добавить в PATH
+python РАБОЧАЯ_СРЕДА/tools/common.py        # самодиагностика: всё ли встало
+```
+
+> Без Pandoc/Tectonic тексты и markdown всё равно редактируются — не работает только
+> сборка DOCX/PDF/PPTX. `common.py` покажет, чего не хватает.
